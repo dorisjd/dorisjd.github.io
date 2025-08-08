@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma - Productos Químicos y Cosméticos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="js/menu.js" defer></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .logo {
+            font-weight: 700;
+            background: linear-gradient(90deg, #84cc16 0%, #facc15 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(254, 240, 138, 0.2) 0%, rgba(134, 239, 172, 0.2) 100%);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .category-badge {
+            transition: all 0.3s ease;
+        }
+        
+        .category-badge:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Icon -->
+                <div class="flex items-center space-x-2">
+                 <img src="style/icono.png" alt="Logo" class="w-10 h-10 rounded-full" />
+                <h1 class="text-2xl font-bold logo">Aroma de vida<span> JD</span></h1>
+        </div>
+                
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-700 hover:text-green-600 font-medium transition">Inicio</a>
+                    <a href="productos.html" class="text-gray-700 hover:text-green-600 font-medium transition">Productos</a>
+                    <a href="nosotros.html" class="text-gray-700 hover:text-green-600 font-medium transition">Nosotros</a>
+                    <a href="contacto.html" class="text-gray-700 hover:text-green-600 font-medium transition">Contacto</a>
+                </nav>
+                
+                <!-- Mobile menu button -->
+                <button class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+<!-- Mobile menu -->
+<div id="mobile-menu" class="md:hidden hidden flex-col space-y-4 mt-4 bg-white px-4 py-3 shadow rounded-lg absolute right-4 top-16 z-40">
+    <a href="index.html" class="block text-gray-700 hover:text-green-600 font-medium transition">Inicio</a>
+    <a href="productos.html" class="block text-gray-700 hover:text-green-600 font-medium transition">Productos</a>
+    <a href="nosotros.html" class="block text-gray-700 hover:text-green-600 font-medium transition">Nosotros</a>
+    <a href="contacto.html" class="block text-gray-700 hover:text-green-600 font-medium transition">Contacto</a>
+</div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- About Us -->
+    <section id="nosotros" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Laboratorio CleanChem" class="rounded-xl shadow-lg w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Sobre <span class="text-green-600">Nosotros</span></h2>
+                    <p class="text-gray-600 mb-4">Aroma de vida es una empresa líder en la fabricación y distribución de productos químicos, cosméticos y de limpieza con más de 15 años de experiencia en el mercado.</p>
+                    <p class="text-gray-600 mb-6">Nuestro compromiso es ofrecer soluciones innovadoras, seguras y efectivas que cumplan con los más altos estándares de calidad y sostenibilidad ambiental.</p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-flask text-green-600"></i>
+                            </div>
+                            <span class="font-medium text-gray-700">Investigación</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-leaf text-yellow-600"></i>
+                            </div>
+                            <span class="font-medium text-gray-700">Ingredientes Naturales</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-medal text-green-600"></i>
+                            </div>
+                            <span class="font-medium text-gray-700">Calidad Certificada</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="fas fa-recycle text-yellow-600"></i>
+                            </div>
+                            <span class="font-medium text-gray-700">Sostenibilidad</span>
+                        </div>
+                    </div>
+                    
+                    <a href="index.html" class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg font-medium transition">Conoce más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Logo and info -->
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 rounded-full bg-gradient-to-r from-green-500 to-yellow-400 flex items-center justify-center">
+                            <span class="text-white font-bold text-sm">FV</span>
+                        </div>
+                        <h3 class="text-xl font-bold logo">Aroma de vida<span> JD</span></h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Soluciones químicas y cosméticas innovadoras para un mundo más limpio y saludable.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/doqiriver/" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Inicio</a></li>
+                        <li><a href="productos.html" class="text-gray-400 hover:text-white transition">Productos</a></li>
+                        <li><a href="nosotros.html" class="text-gray-400 hover:text-white transition">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html" class="text-gray-400 hover:text-white transition">Contacto</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Productos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Químicos Industriales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Cosméticos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Productos de Limpieza</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Nuevos Lanzamientos</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Ofertas Especiales</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Información de Contacto</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-green-400 mt-1 mr-3"></i>
+                            <span class="text-gray-400">Dirreccion</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-green-400 mr-3"></i>
+                            <span class="text-gray-400">3134390766</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-green-400 mr-3"></i>
+                            <span class="text-gray-400">3103281048</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-green-400 mr-3"></i>
+                            <span class="text-gray-400">dorisriveraq@gmail.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-clock text-green-400 mr-3"></i>
+                            <span class="text-gray-400">Lun-Vie: 9:00 - 18:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 CleanChem. Todos los derechos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition">Política de Privacidad</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Términos de Servicio</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">Mapa del Sitio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
